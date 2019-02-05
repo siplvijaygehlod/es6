@@ -11,12 +11,10 @@ module.exports = {
         contentBase: path.resolve(__dirname, 'build')
     },
     module: {
-        rules: [
-            {
+        rules: [{
             test: /\.js$/,
             exclude: /node_modules/,
             use: ['babel-loader']
-        }
-    ]
+        }]
     }
 };
